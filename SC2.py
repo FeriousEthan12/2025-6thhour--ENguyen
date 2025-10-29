@@ -17,8 +17,8 @@
 
 #Code Here:
 
-W = int(input("type in your weight : "))
-H = int(input("type in your Height : "))
+W = int(input("type in your weight kg : "))
+H = int(input("type in your Height meters  : "))
 
 BMI = W / (H**2)
 if BMI >= 18.5:
