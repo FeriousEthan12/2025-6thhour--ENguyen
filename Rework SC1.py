@@ -22,7 +22,7 @@ enemy = {"Slime" : {"passive" : "slimy",
 
 
 #New reworked Dev Tool
-Dev = input("Type in a ememy's name to change the damage (Slime, Skeleton, Ork, Dire Wolf, King Calcium) : ")
+Dev = input("Type in a enemy's name to change the damage (Slime, Skeleton, Ork, Dire Wolf, King Calcium) : ")
 
 if Dev == "Slime":
     print("Damage :", enemy["Slime"]["Damage"])
