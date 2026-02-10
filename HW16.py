@@ -26,10 +26,7 @@ def loop(max):
 
 
 #5. Call all of the functions created in 1 - 4 with relevant arguments.
-hello()
-average(int(input("Enter the number: ")), int(input("Enter the number: ")), int(input("Enter the number: ")))
-animal_list("dog", "cat", "seal", "bird", "duck")
-loop(int(input("Enter the max number: ")))
+
 
 #6. Create a variable x that has the value of 2. Print x
 x = 2
