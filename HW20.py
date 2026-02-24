@@ -26,13 +26,12 @@ candybag.double_cost()
 print(f"Candybags new cost is", candybag.cost,"$")
 
 #5. Directly change the stock of the third store item to approx. 1/4th the original stock and then print the new stock amount.
-print(f"There is", breadbags.stock, "Breadbags left")
-breadbags.discount_one_forth()
-print(f"There is", breadbags.stock, "Breadbags left")
+breadbags.stock /= 4
+print(f"There is {breadbags.stock} Breadbags")
 #6. Delete the first store item and then attempt to print the weight of the first store item. Create a try/except catch to fix the error.
 
 del milk
 try:
     print(milk.weight)
 except:
-    raise Exception("The milk is gone")
+    print("The milk is gone")
