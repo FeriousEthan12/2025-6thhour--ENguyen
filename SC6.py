@@ -59,6 +59,13 @@ def Player_ATK():
         time.sleep(0.4)
         print(f"You miss.({P_Atk + LaeZel.Atk})")
 
+    if LaeZel.HP <= 0:
+        print("You lose")
+        exit()
+
+    elif Ork.HP <= 0:
+        print("You win")
+        exit()
 
 
 def Enemy_ATK():
@@ -89,6 +96,13 @@ def Enemy_ATK():
         time.sleep(0.4)
         print(f"The Ork missed.({E_Atk + Ork.Atk})")
 
+    if LaeZel.HP <= 0:
+        print("You lose")
+        exit()
+
+    elif Ork.HP <= 0:
+        print("You win")
+        exit()
 
 
 def battle():
@@ -105,21 +119,8 @@ def battle():
             time.sleep(0.4)
 
             Player_ATK()
-            if LaeZel.HP <= 0:
-                print("You lose")
-                exit()
-
-            elif Ork.HP <= 0:
-                print("You win")
-                exit()
             Enemy_ATK()
-            if LaeZel.HP <= 0:
-                print("You lose")
-                exit()
 
-            elif Ork.HP <= 0:
-                print("You win")
-                exit()
 
     elif p_roll < e_roll:
         time.sleep(0.4)
@@ -128,21 +129,7 @@ def battle():
             time.sleep(0.4)
 
             Enemy_ATK()
-            if LaeZel.HP <= 0:
-                print("You lose")
-                exit()
-
-            elif Ork.HP <= 0:
-                print("You win")
-                exit()
             Player_ATK()
-            if LaeZel.HP <= 0:
-                print("You lose")
-                exit()
-
-            elif Ork.HP <= 0:
-                print("You win")
-                exit()
 
 
     else:
